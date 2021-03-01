@@ -1,0 +1,15 @@
+node_modules
+build
+npm-debug.log
+.env
+.DS_Store
+package-lock.json
+
+/* VS Code */
+.vscode/
+
+/* snapshots - changes are too volatile at times to commit */
+__snapshots__
+*.snap
+*.js.snap
+*.test.js.snap
