@@ -1,6 +1,7 @@
 ## Introduction
 
 Doc.ly technical solution by Alisdair Buttery
+
 Email: alisdairb1995@gmail.com
 
 ## Prerequisites
@@ -19,7 +20,7 @@ The API and front-end both require seperate commands to run; follow the below st
 5. Once dependecies have installed run `npm run start` to launch the app; this will launch on port 3000.
 
 #### Server solution
-1. Navigate to the app folder in the solution root
+1. Navigate to the server folder in the solution root
 2. Locate and change the file named `example.env` to `.env`
 3. In the file now named `.env` locate the environment variable `REACT_APP_GMAPS_API_KEY` and paste in your Google Maps API key after the `=`
 4. Install the required dependencies using the command `npm install`
@@ -33,7 +34,7 @@ I split the solution into two pieces: an API and a UI which consumes the API.
 
 This was done to decouple both areas and keep each solution focused on their task at hand; it also allows each solution to be deployed, scaled and released independently and for the API to potentially be offered to other consumers.
 
-When retrieving Doctors data i took the approach of implementing this behind the applications own API thus removing the front-ends reliance on knowing how Google Places API is implemented, reduce exposure of any API keys and allowing in future the backend to take control of things such as sanitising data to reduce the response payload without burdening the user-experience.
+When retrieving Doctors data I took the approach of implementing this behind the applications own API thus removing the front-ends reliance on knowing how Google Places API is implemented, reduce exposure of any API keys and allowing in future the backend to take control of things such as sanitising data to reduce the response payload without burdening the user-experience.
 
 I would in future move this behind a Doctors data service layer on the backend with the endpoint implementing the service layer; this will then allow the endpoint and response we send to remain the same no matter what data source we use for the Doctor's data. This would allow us to keep the API un-versioned and the response consistently the same for the end user.
 
