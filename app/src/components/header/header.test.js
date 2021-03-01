@@ -4,7 +4,6 @@ import '@testing-library/jest-dom/extend-expect';
 import Header from './header';
 
 describe('<Header />', () => {
-
     it('should match snapshot', () => {
         const { asFragment } = render(<Header />);
         expect(asFragment()).toMatchSnapshot();

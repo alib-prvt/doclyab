@@ -10,7 +10,6 @@ jest.mock('@reach/router', () => ({
 }));
 
 describe('<MarkerInfoWindow />', () => {
-
     const testPlaceId = 1234567;
     const testOverlayDetails = {
         result: {

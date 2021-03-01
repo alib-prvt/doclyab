@@ -10,7 +10,6 @@ const testDetails = {
 };
 
 describe('<DoctorDetails />', () => {
-
     it('should match snapshot', () => {
         const { asFragment } = render(<DoctorDetails details={testDetails} />);
         expect(asFragment()).toMatchSnapshot();
